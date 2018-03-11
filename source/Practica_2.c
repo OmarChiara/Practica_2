@@ -43,11 +43,11 @@
 #include "fsl_port.h"
 #include "fsl_clock.h"
 #include "fsl_adc16.h"
-#include "C:\Users\Misael\Documents\MCUXpressoIDE_10.1.1_606\workspace\Try1\Practica_2\drivers\fsl_dac.h"
-#include "C:\Users\Misael\Documents\MCUXpressoIDE_10.1.1_606\workspace\Try1\Practica_2\Headers\adc.h"
-#include "C:\Users\Misael\Documents\MCUXpressoIDE_10.1.1_606\workspace\Try1\Practica_2\Headers\GPIO.h"
-#include "C:\Users\Misael\Documents\MCUXpressoIDE_10.1.1_606\workspace\Try1\Practica_2\Headers\BCD.h"
-#include "C:\Users\Misael\Documents\MCUXpressoIDE_10.1.1_606\workspace\Try1\Practica_2\Headers\LED_INDICATOR.h"
+#include "fsl_dac.h"
+#include "adc.h"
+#include "GPIO.h"
+#include "BCD.h"
+#include "LED_INDICATOR.h"
 
 
 
