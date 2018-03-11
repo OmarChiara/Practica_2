@@ -5,27 +5,18 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../Headers/BCD.c \
-../Headers/Debounce.c \
 ../Headers/GPIO.c \
-../Headers/LED_INDICATOR.c \
-../Headers/Mode.c \
-../Headers/adc.c 
+../Headers/LED_INDICATOR.c 
 
 OBJS += \
 ./Headers/BCD.o \
-./Headers/Debounce.o \
 ./Headers/GPIO.o \
-./Headers/LED_INDICATOR.o \
-./Headers/Mode.o \
-./Headers/adc.o 
+./Headers/LED_INDICATOR.o 
 
 C_DEPS += \
 ./Headers/BCD.d \
-./Headers/Debounce.d \
 ./Headers/GPIO.d \
-./Headers/LED_INDICATOR.d \
-./Headers/Mode.d \
-./Headers/adc.d 
+./Headers/LED_INDICATOR.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

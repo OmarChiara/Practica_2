@@ -11,6 +11,7 @@
 #define RESET_BUTTON ((uint32_t) 0u)
 #define INC_BUTTON   ((uint32_t) 1u)
 #define DEC_BUTTON   ((uint32_t) 2u)
+#define MASTER_RESET_BUTTON   ((uint32_t) 3u)
 
 
 #define BCD_SEG_A  ((uint32_t) 0u)

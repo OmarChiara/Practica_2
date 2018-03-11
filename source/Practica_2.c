@@ -48,8 +48,7 @@
 #include "C:\Users\Misael\Documents\MCUXpressoIDE_10.1.1_606\workspace\Try1\Practica_2\Headers\GPIO.h"
 #include "C:\Users\Misael\Documents\MCUXpressoIDE_10.1.1_606\workspace\Try1\Practica_2\Headers\BCD.h"
 #include "C:\Users\Misael\Documents\MCUXpressoIDE_10.1.1_606\workspace\Try1\Practica_2\Headers\LED_INDICATOR.h"
-//#include "C:\Users\Misael\Documents\MCUXpressoIDE_10.1.1_606\workspace\Try1\Practica_2\Headers\Debounce.h"
-//#include "C:\Users\Misael\Documents\MCUXpressoIDE_10.1.1_606\workspace\Try1\Practica_2\Headers\Mode.h"
+
 
 
 
@@ -58,8 +57,6 @@
 
 void select_Digit(uint32_t digit);
 void Digits(uint32_t contador);
-//void Led_Mode1(void);
-//void Led_Mode2(void);
 void Init_Mode1(void);
 void Init_Mode2(void);
 void Init_Mode3(void);
@@ -128,7 +125,7 @@ GPIO_Init();
 
 
     select_Mode(modo);
-if(GPIO_ReadPinInput(GPIOB, 3)==0U)
+if(GPIO_ReadPinInput(GPIOB, MASTER_RESET_BUTTON)==0U)
 {
 	modo=1;
 	numero=0;
