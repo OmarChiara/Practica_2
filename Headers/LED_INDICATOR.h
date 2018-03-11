@@ -16,6 +16,9 @@
 
 void Led_Mode1(void);
 void Led_Mode2(void);
-
+void Led_Mode3(void);
+void Init_Led1(void);
+void Init_Led2(void);
+void Init_Led3(void);
 
 #endif /* LED_INDICATOR_H_ */

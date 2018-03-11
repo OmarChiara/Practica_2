@@ -51,29 +51,15 @@
 //#include "C:\Users\Misael\Documents\MCUXpressoIDE_10.1.1_606\workspace\Try1\Practica_2\Headers\Debounce.h"
 //#include "C:\Users\Misael\Documents\MCUXpressoIDE_10.1.1_606\workspace\Try1\Practica_2\Headers\Mode.h"
 
-#define DEMO_ADC16_BASEADDR ADC0
-#define DEMO_ADC16_CHANNEL_GROUP 0U
-#define DEMO_ADC16_USER_CHANNEL 0U /* PTE20, ADC0_SE0 */
-#define DEMO_DAC_BASEADDR DAC0
 
-#define DEMO_ADC16_IRQn ADC0_IRQn
-#define DEMO_ADC16_IRQ_HANDLER_FUNC ADC0_IRQHandler
-#define DAC_1_0_VOLTS 1241U
-#define DAC_1_5_VOLTS 1862U
-#define DAC_2_0_VOLTS 2482U
-#define DAC_2_5_VOLTS 3103U
-#define DAC_3_0_VOLTS 3724U
-
-#define VREF_BRD 330
-#define SE_12BIT 4096.0
 
 /* TODO: insert other include files here. */
 
 
 void select_Digit(uint32_t digit);
 void Digits(uint32_t contador);
-void Led_Mode1(void);
-void Led_Mode2(void);
+//void Led_Mode1(void);
+//void Led_Mode2(void);
 void Init_Mode1(void);
 void Init_Mode2(void);
 void Init_Mode3(void);
@@ -81,6 +67,12 @@ void select_Mode(uint32_t Modo);
 void Cont_Reset(void);
 void Det_Button(void);
 void DAC_ADC_Init(void);
+void Init_Mode4(void);
+void delay(void);
+void ToggleLed (void);
+
+
+
 
 /* TODO: insert other definitions and declarations here. */
 
@@ -89,6 +81,8 @@ int x=0;
 int modo=1;
 int numero=0;
 int ModCont;
+
+
 
 
 volatile bool g_Adc16ConversionDoneFlag = false;
@@ -107,9 +101,9 @@ int main(void) {
 	    BOARD_BootClockRUN();
 
   	/* Init board hardware. */
-    BOARD_InitBootPins();
-    BOARD_InitBootClocks();
-    BOARD_InitBootPeripherals();
+BOARD_InitBootPins();
+BOARD_InitBootClocks();
+BOARD_InitBootPeripherals();
   	/* Init FSL debug console. */
     BOARD_InitDebugConsole();
     EnableIRQ(DEMO_ADC16_IRQn);
@@ -134,6 +128,14 @@ GPIO_Init();
 
 
     select_Mode(modo);
+if(GPIO_ReadPinInput(GPIOB, 3)==0U)
+{
+	modo=1;
+	numero=0;
+}
+
+
+
 
     }
     }
@@ -222,6 +224,7 @@ GPIO_Init();
     {
 
     Led_Mode1();
+
     unsigned short dec, uni,cent;
 
 
@@ -279,6 +282,8 @@ GPIO_Init();
 
     Cont_Reset();
          x++;
+
+
     }
 
 
@@ -286,7 +291,7 @@ GPIO_Init();
 
   void Init_Mode3(void)
     {
-
+	  Led_Mode3();
 
 
 	  g_Adc16ConversionDoneFlag = false;
@@ -355,6 +360,7 @@ GPIO_Init();
     	        		Init_Mode3();
     	        	}
     	        	break;
+
     	        	}
     }
 
@@ -457,12 +463,6 @@ GPIO_Init();
         /* Read conversion result to clear the conversion completed flag. */
         g_Adc16ConversionValue = ADC16_GetChannelConversionValue(DEMO_ADC16_BASEADDR, DEMO_ADC16_CHANNEL_GROUP);
     }
-
-
-
-
-
-
 
 
 
