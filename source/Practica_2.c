@@ -48,6 +48,7 @@
 #include "GPIO.h"
 #include "BCD.h"
 #include "LED_INDICATOR.h"
+#include "numeros.h"
 
 
 
@@ -156,16 +157,16 @@ if(GPIO_ReadPinInput(GPIOB, MASTER_RESET_BUTTON)==0U)
     {
     switch(contador)
         	{
-        	case 0 :GPIOC->PDOR= (0X40);break;
-        	case 1 :GPIOC->PDOR= (0X79);break;
-        	case 2 :GPIOC->PDOR= (0X24);break;
-        	case 3 :GPIOC->PDOR= (0X30);break;
-        	case 4 :GPIOC->PDOR= (0X19);break;
-        	case 5 :GPIOC->PDOR= (0X12);break;
-        	case 6 :GPIOC->PDOR= (0X2);break;
-        	case 7 :GPIOC->PDOR= (0X78);break;
-        	case 8 :GPIOC->PDOR= (0X0);break;
-        	case 9 :GPIOC->PDOR= (0X18);break;
+        	case 0 :GPIOC->PDOR= (cero);break;
+        	case 1 :GPIOC->PDOR= (uno);break;
+        	case 2 :GPIOC->PDOR= (dos);break;
+        	case 3 :GPIOC->PDOR= (tres);break;
+        	case 4 :GPIOC->PDOR= (cuatro);break;
+        	case 5 :GPIOC->PDOR= (cinco);break;
+        	case 6 :GPIOC->PDOR= (seis);break;
+        	case 7 :GPIOC->PDOR= (siete);break;
+        	case 8 :GPIOC->PDOR= (ocho);break;
+        	case 9 :GPIOC->PDOR= (nueve);break;
         	}
 
     }
