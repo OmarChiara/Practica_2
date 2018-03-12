@@ -62,7 +62,7 @@ void GPIO_Init(void)
     		gpio_pin_config_t ls_portbcfg;
 
     		ls_portbcfg.pinDirection = kGPIO_DigitalInput;
-    		ls_portbcfg.outputLogic= 0u;
+    		ls_portbcfg.outputLogic= false;
 
 
     		GPIO_PinInit(GPIOB, RESET_BUTTON,&ls_portbcfg);
@@ -74,7 +74,7 @@ void GPIO_Init(void)
     		gpio_pin_config_t ls_portccfg;
 
     		ls_portccfg.pinDirection = kGPIO_DigitalOutput;
-    		ls_portccfg.outputLogic= 1u;
+    		ls_portccfg.outputLogic= true;
 
     		GPIO_PinInit(GPIOC,BCD_SEG_A, &ls_portccfg);
     		GPIO_PinInit(GPIOC,BCD_SEG_B, &ls_portccfg);
@@ -88,7 +88,7 @@ void GPIO_Init(void)
             	gpio_pin_config_t ls_portdcfg;
 
     		   ls_portdcfg.pinDirection = kGPIO_DigitalOutput;
-    		   ls_portdcfg.outputLogic= 1u;
+    		   ls_portdcfg.outputLogic= true;
 
 
        		GPIO_PinInit(GPIOD,CENTENAS, &ls_portdcfg);

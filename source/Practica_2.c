@@ -126,7 +126,7 @@ GPIO_Init();
 
 
     select_Mode(modo);
-if(GPIO_ReadPinInput(GPIOB, MASTER_RESET_BUTTON)==0U)
+if(GPIO_ReadPinInput(GPIOB, MASTER_RESET_BUTTON)==false)
 {
 	modo=1;
 	numero=0;
@@ -247,7 +247,7 @@ if(GPIO_ReadPinInput(GPIOB, MASTER_RESET_BUTTON)==0U)
 
     if  (x>=10000)
     {
-    if (GPIO_ReadPinInput(GPIOB, INC_BUTTON)==0U)
+    if (GPIO_ReadPinInput(GPIOB, INC_BUTTON)==false)
     {
     if(numero>=MAX_VALUE)
     {
@@ -262,7 +262,7 @@ if(GPIO_ReadPinInput(GPIOB, MASTER_RESET_BUTTON)==0U)
     }
 
 
-    if (GPIO_ReadPinInput(GPIOB, DEC_BUTTON)==0U)
+    if (GPIO_ReadPinInput(GPIOB, DEC_BUTTON)==false)
         {
         if(numero<=MIN_VALUE)
         {
@@ -365,7 +365,7 @@ if(GPIO_ReadPinInput(GPIOB, MASTER_RESET_BUTTON)==0U)
 
     void Cont_Reset(void)
     {
-    	if(GPIO_ReadPinInput(GPIOB, RESET_BUTTON)==0U)
+    	if(GPIO_ReadPinInput(GPIOB, RESET_BUTTON)==false )
     	{
     		ModCont++;
     	}
