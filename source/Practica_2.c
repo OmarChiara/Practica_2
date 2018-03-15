@@ -157,16 +157,16 @@ if(GPIO_ReadPinInput(GPIOB, MASTER_RESET_BUTTON)==false)
     {
     switch(contador)
         	{
-        	case 0 :GPIOC->PDOR= (cero);break;
-        	case 1 :GPIOC->PDOR= (uno);break;
-        	case 2 :GPIOC->PDOR= (dos);break;
-        	case 3 :GPIOC->PDOR= (tres);break;
-        	case 4 :GPIOC->PDOR= (cuatro);break;
-        	case 5 :GPIOC->PDOR= (cinco);break;
-        	case 6 :GPIOC->PDOR= (seis);break;
-        	case 7 :GPIOC->PDOR= (siete);break;
-        	case 8 :GPIOC->PDOR= (ocho);break;
-        	case 9 :GPIOC->PDOR= (nueve);break;
+        	case 0 :GPIOC->PDOR= (NUMEROS_CERO);break;
+        	case 1 :GPIOC->PDOR= (NUMEROS_UNO);break;
+        	case 2 :GPIOC->PDOR= (NUMEROS_DOS);break;
+        	case 3 :GPIOC->PDOR= (NUMEROS_TRES);break;
+        	case 4 :GPIOC->PDOR= (NUMEROS_CUATRO);break;
+        	case 5 :GPIOC->PDOR= (NUMEROS_CINCO);break;
+        	case 6 :GPIOC->PDOR= (NUMEROS_SEIS);break;
+        	case 7 :GPIOC->PDOR= (NUMEROS_SIETE);break;
+        	case 8 :GPIOC->PDOR= (NUMEROS_OCHO);break;
+        	case 9 :GPIOC->PDOR= (NUMEROS_NUEVE);break;
         	}
 
     }
