@@ -9,17 +9,17 @@
 #define NUMEROS_H_
 
 
-#define cero 0X40
+#define NUMEROS_CERO 0X40
 
-#define uno		0X79
-#define dos		0X24
-#define tres	0X30
-#define cuatro	0X19
-#define cinco	0X12
-#define seis	0X2
-#define siete	0X78
-#define ocho	0X0
-#define nueve	0X18
+#define NUMEROS_UNO		0X79
+#define NUMEROS_DOS		0X24
+#define NUMEROS_TRES	0X30
+#define NUMEROS_CUATRO	0X19
+#define NUMEROS_CINCO	0X12
+#define NUMEROS_SEIS	0X2
+#define NUMEROS_SIETE	0X78
+#define NUMEROS_OCHO	0X0
+#define NUMEROS_NUEVE	0X18
 
 
 

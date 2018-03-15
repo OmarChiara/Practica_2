@@ -2523,42 +2523,42 @@ OUTPUT(Practica_2.axf elf32-littlearm)
  .debug_line    0x00003850      0x32c ./Headers/LED_INDICATOR.o
  .debug_line    0x00003b7c      0x1e8 ./CMSIS/system_MKL25Z4.o
 
-.debug_str      0x00000000    0x36769
+.debug_str      0x00000000    0x367b9
  .debug_str     0x00000000    0x30d24 ./utilities/fsl_debug_console.o
                               0x30f94 (size before relaxing)
  .debug_str     0x00030d24      0x3d1 ./startup/startup_mkl25z4.o
                                0x2971 (size before relaxing)
- .debug_str     0x000310f5     0x1b45 ./source/Practica_2.o
-                              0x32179 (size before relaxing)
- .debug_str     0x00032c3a      0x532 ./source/mtb.o
+ .debug_str     0x000310f5     0x1b95 ./source/Practica_2.o
+                              0x321c9 (size before relaxing)
+ .debug_str     0x00032c8a      0x532 ./source/mtb.o
                                0x2a70 (size before relaxing)
- .debug_str     0x0003316c       0x1f ./source/semihost_hardfault.o
+ .debug_str     0x000331bc       0x1f ./source/semihost_hardfault.o
                                0x2561 (size before relaxing)
- .debug_str     0x0003318b      0x5ae ./drivers/fsl_adc16.o
+ .debug_str     0x000331db      0x5ae ./drivers/fsl_adc16.o
                               0x30d16 (size before relaxing)
- .debug_str     0x00033739     0x1402 ./drivers/fsl_clock.o
+ .debug_str     0x00033789     0x1402 ./drivers/fsl_clock.o
                               0x31a78 (size before relaxing)
- .debug_str     0x00034b3b      0x259 ./drivers/fsl_dac.o
+ .debug_str     0x00034b8b      0x259 ./drivers/fsl_dac.o
                               0x30664 (size before relaxing)
- .debug_str     0x00034d94      0x14f ./drivers/fsl_gpio.o
+ .debug_str     0x00034de4      0x14f ./drivers/fsl_gpio.o
                               0x302dd (size before relaxing)
- .debug_str     0x00034ee3      0x962 ./drivers/fsl_lpsci.o
+ .debug_str     0x00034f33      0x962 ./drivers/fsl_lpsci.o
                               0x31080 (size before relaxing)
- .debug_str     0x00035845      0x832 ./drivers/fsl_uart.o
+ .debug_str     0x00035895      0x832 ./drivers/fsl_uart.o
                               0x310a3 (size before relaxing)
- .debug_str     0x00036077       0x4c ./board/board.o
+ .debug_str     0x000360c7       0x4c ./board/board.o
                               0x30ef0 (size before relaxing)
- .debug_str     0x000360c3      0x300 ./board/clock_config.o
+ .debug_str     0x00036113      0x300 ./board/clock_config.o
                               0x309a6 (size before relaxing)
- .debug_str     0x000363c3       0x31 ./board/peripherals.o
+ .debug_str     0x00036413       0x31 ./board/peripherals.o
                                0x2572 (size before relaxing)
- .debug_str     0x000363f4      0x1a3 ./board/pin_mux.o
+ .debug_str     0x00036444      0x1a3 ./board/pin_mux.o
                               0x30109 (size before relaxing)
- .debug_str     0x00036597      0x110 ./Headers/GPIO.o
+ .debug_str     0x000365e7      0x110 ./Headers/GPIO.o
                               0x3035c (size before relaxing)
- .debug_str     0x000366a7       0x7b ./Headers/LED_INDICATOR.o
+ .debug_str     0x000366f7       0x7b ./Headers/LED_INDICATOR.o
                               0x3004f (size before relaxing)
- .debug_str     0x00036722       0x47 ./CMSIS/system_MKL25Z4.o
+ .debug_str     0x00036772       0x47 ./CMSIS/system_MKL25Z4.o
                               0x2f3e2 (size before relaxing)
 
 .comment        0x00000000       0x7f
